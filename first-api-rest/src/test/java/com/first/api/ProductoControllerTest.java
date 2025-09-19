@@ -83,7 +83,7 @@ public class ProductoControllerTest {
         assertEquals(producto.getId(), resultado.getId());
         verify(productoService, times(1)).updateProducto(producto);
     }
-
+//New Comment 3
     @Test
     void eliminarProducto_CuandoSeLlama_DevuelveMensajeDeEliminacion() {
         when(productoService.deleteProducto(1)).thenReturn("Producto eliminado !!1");
